@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>translator</title>
+</head>
+<body> 
+  <div class="translator__wrapper">
+    <div class="translator__settings">
+      <select name="lang-from" id="lang-from">
+        <option value="ru">Русский</option>
+        <option value="en">Английский</option>
+        <option value="de">Немецкий</option>
+        <option value="pl">Польский</option>
+        <option value="ro">румынский</option>
+      </select>
+      <select name="lang-to" id="lang-to">
+        <option value="ru">Русский</option>
+        <option value="en">Английский</option>
+        <option value="de">Немецкий</option>
+        <option value="pl">Польский</option>
+        <option value="ro">румынский</option>
+      </select>
+    </div>
+    <div class="translator__inner">
+      <div class="translator__input">
+        <div class="translator__input-area">
+          <textarea name="input-area" id="input" placeholder="Напишите текст который хотите перевести"></textarea>
+        </div>
+      </div>
+      <div class="translator__output">
+        <div class="translator__output-area">
+          <textarea name="output-area" disabled id="output" placeholder="Тут будет результат перевода"></textarea>
+        </div>
+      </div>
+    </div>
+    <button id="result">Translate</button>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
